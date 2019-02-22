@@ -11,5 +11,5 @@ def blog_title(request):
 def blog_articles(request, article_id):
     article = get_object_or_404(BlogArticles, id=article_id)
     pub = article.publish
-    return render(request, 'blog/content.html', {'article': article, 'publish':pub})
+    return render(request, 'blog/content.html', {'article': article, 'publish': pub})
 
